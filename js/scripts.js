@@ -8,3 +8,6 @@
 //   });
 //
 // });
+var pigLatin = function(englishWord){
+   return englishWord + "ay";
+};
