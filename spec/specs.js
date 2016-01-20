@@ -26,3 +26,9 @@ describe("pigLatin", function(){
     expect(pigLatin('cricket')).to.equal('icketcray');
   });
 });
+
+describe("vowelCheck", function(){
+  it("returns true if a word has a vowel in the specified spot", function(){
+    expect(vowelCheck("peanut", 1)).to.equal(true);
+  });
+});
