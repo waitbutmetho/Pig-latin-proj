@@ -9,5 +9,10 @@
 //
 // });
 var pigLatin = function(englishWord){
-   return englishWord + "ay";
+    if (englishWord[0] === 'a' || englishWord[0] === 'e' || englishWord[0] === 'i' || englishWord[0] === 'o' || englishWord[0] === 'u'){
+return englishWord + "ay";
+    }else{
+    return  englishWord.slice(1) + englishWord[0] + 'ay'
+    }
+
 };
