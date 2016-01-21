@@ -25,8 +25,6 @@ describe("pigLatin", function(){
   it("takes two consonants from the beginning of a word and moves them to the end", function(){
     expect(pigLatin('cricket')).to.equal('icketcray');
   });
-
-
 });
 
 describe("stringToArray", function(){
@@ -37,7 +35,7 @@ describe("stringToArray", function(){
 
 describe("arrayToPigLatin", function(){
   it("takes array of english words and translates them each into pig latin", function(){
-    expect(arrayToPigLatin(["hello", "world"]).to.eql(["ellohay","orldway"]));
+    expect(arrayToPigLatin(["hello", "world"])).to.eql(["ellohay","orldway"]);
   });
 });
 

@@ -16,7 +16,14 @@ var pigLatin = function(englishWord){
 var stringToArray = function(str){
   return str.split(' ');
 };
+var arrayToPigLatin = function(stringArray){
+  var pigLatinArray = [];
+  stringArray.forEach(function(word) {
+    pigLatinArray.push(pigLatin(word));
+  });
 
+  return pigLatinArray;
+};
 var hasConsonantAt = function(word, position) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
   for (var i = 0; i < vowels.length; i++) {
